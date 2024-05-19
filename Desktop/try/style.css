@@ -1,0 +1,19 @@
+
+ .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    grid-gap: 30px;
+    justify-content: space-between;
+    padding-top: 110px;
+  }
+ .buttons button {
+    width: 55px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #777777;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
