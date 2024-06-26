@@ -1,0 +1,25 @@
+
+.buttons button.red {
+   background-color: #FF0000;
+   color: white;
+   grid-column: 4 / 5;
+   margin-top: -60px;
+   margin-bottom: -50px;
+   
+}
+.buttons button.orange {
+   grid-column: 4 / 5;
+  
+}
+.buttons button:active {
+   background-color: #e6e6e6;
+}
+ 
+.buttons button.orange {
+   background-color: #FF9500;
+   color: white;
+}
+.buttons button.green {
+   background-color: #28A745;
+   color: white;
+}
