@@ -18,6 +18,10 @@ const App = () => {
     cv: '',
   });
 
+  const onChangeHandler = (event) =>{
+    console.log(event)
+  }
+
   return (
     <div className="App">
       <form>
@@ -128,81 +132,53 @@ const App = () => {
 
         </div>
         <div className="form-group">
-            <label htmlFor="framework" className="form-label">
-              Preferred Frameworks and Languages
-            </label>
+            <label htmlFor="framework" className="form-label"> Preferred Frameworks and Languages: </label>
             <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="framework-react"
-                name="framework"
-                value="1"
-                checked={formData.framework.includes('1')}
-                
-                onChange={(e) => setFormData({ ...formData, Framework: e.target.checked })}
-              />
-          <label className="form-check-label" htmlFor="framework-react">
-            React
-          </label>
+                  
+              <div>
+                <input type='checkbox' name='framework' value='React' onChange={onChangeHandler} />
+                <label htmlFor="React">React</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='angular' onChange={onChangeHandler} />
+                <label htmlFor="angular">Angular</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='mongo' onChange={onChangeHandler} />
+                <label htmlFor="mongo">MongoDB</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='java' onChange={onChangeHandler} />
+                <label htmlFor="java">Java</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='html' onChange={onChangeHandler} />
+                <label htmlFor="html">HTML/CSS</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='PHP' onChange={onChangeHandler} />
+                <label htmlFor="PHP">PHP</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='c' onChange={onChangeHandler} />
+                <label htmlFor="c">C#</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='python' onChange={onChangeHandler} />
+                <label htmlFor="python">Python</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='sql' onChange={onChangeHandler} />
+                <label htmlFor="sql">MySQL</label>
+              </div>
+              <div>
+                <input type="checkbox" name='freamwork' value='django' onChange={onChangeHandler} />
+                <label htmlFor="django">Django</label>
+              </div>
+              
     
-  </div>
-  <div className="form-check">
-    <input
-      className="form-check-input"
-      type="checkbox"
-      id="framework-html"
-      name="framework"
-      value="2"
-      checked={formData.framework.includes('2')}
-      onChange={(e) => handleFrameworkChange(e.target.value, e.target.checked)}
-    />
-    <label className="form-check-label" htmlFor="framework-html">
-      Java
-    </label>
-  </div>
-  <div className="form-check">
-    <input
-      className="form-check-input"
-      type="checkbox"
-      id="framework-html"
-      name="framework"
-      value="2"
-      checked={formData.framework.includes('2')}
-      onChange={(e) => handleFrameworkChange(e.target.value, e.target.checked)}
-    />
-    <label className="form-check-label" htmlFor="framework-html">
-      Angular
-    </label>
-  </div>
-  <div className="form-check">
-    <input
-      className="form-check-input"
-      type="checkbox"
-      id="framework-html"
-      name="framework"
-      value="2"
-      checked={formData.framework.includes('2')}
-      onChange={(e) => handleFrameworkChange(e.target.value, e.target.checked)}
-    />
-    <label className="form-check-label" htmlFor="framework-html">
-      
-    </label>
-  </div>
-  <div className="form-check">
-    <input
-      className="form-check-input"
-      type="checkbox"
-      id="framework-html"
-      name="framework"
-      value="2"
-      checked={formData.framework.includes('2')}
-      onChange={(e) => handleFrameworkChange(e.target.value, e.target.checked)}
-    />
-    <label className="form-check-label" htmlFor="framework-html">
-      HTML
-    </label>
-  </div>
+         </div>
+  
   
 </div>
         <div className="form-group">
